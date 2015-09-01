@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/car_start"
+                android:id="@+id/carStartLabel"
+                android:layout_weight="0.04"
+                android:textSize="@dimen/abc_text_size_large_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/initial_position"
+                android:id="@+id/carStartPos"
+                android:layout_weight="0.04"
+                android:textSize="@dimen/abc_text_size_large_material" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/passenger_pick_up"
+                android:id="@+id/passengerPickUpLabel"
+                android:layout_weight="0.04"
+                android:textSize="@dimen/abc_text_size_large_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/initial_position"
+                android:id="@+id/passengerPickupPos"
+                android:layout_weight="0.04"
+                android:textSize="@dimen/abc_text_size_large_material" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/passenger_drop"
+                android:id="@+id/passengerDropLabel"
+                android:layout_weight="0.04"
+                android:textSize="@dimen/abc_text_size_large_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/initial_position"
+                android:id="@+id/passengerDropPos"
+                android:layout_weight="0.04"
+                android:textSize="@dimen/abc_text_size_large_material" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Current position"
+            android:id="@+id/textView"
+            android:layout_weight="0.04"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/initial_position"
+            android:id="@+id/currentPositionText"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/passenger_pick_up_notification"
+            android:id="@+id/passengerPickedUpNotification"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+            android:layout_weight="0.04" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_run_button"
+            android:id="@+id/newRunButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+</RelativeLayout>
